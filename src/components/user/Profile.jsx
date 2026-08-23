@@ -21,7 +21,7 @@ const Profile = () => {
       const userId = localStorage.getItem("userId");
 
       if (!userId) return;
-
+      
       try {
         const response = await axios.get(
           `http://localhost:3002/userProfile/${userId}`,
