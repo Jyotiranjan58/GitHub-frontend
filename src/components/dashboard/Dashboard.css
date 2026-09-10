@@ -1,0 +1,137 @@
+/* Container Layout */
+.dashboard-container {
+  display: flex;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 30px 20px;
+  gap: 30px;
+  color: #f0f6fc;
+}
+
+/* Sidebars */
+.sidebar-left,
+.sidebar-right {
+  width: 25%;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+/* Main Content Area */
+.dashboard-main {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Typography */
+h2 {
+  font-size: 20px;
+  margin-bottom: 15px;
+  border-bottom: 1px solid #30363d;
+  padding-bottom: 10px;
+}
+
+h3 {
+  font-size: 16px;
+  margin-bottom: 10px;
+  color: #8b949e;
+}
+
+/* Search Bar */
+.search-container {
+  margin-bottom: 20px;
+}
+
+.search-input {
+  width: 100%;
+  padding: 8px 12px;
+  background-color: #0d1117;
+  border: 1px solid #30363d;
+  border-radius: 6px;
+  color: #f0f6fc;
+  font-size: 14px;
+  transition: border-color 0.2s ease-in-out;
+}
+
+.search-input:focus {
+  outline: none;
+  border-color: #58a6ff;
+  box-shadow: 0 0 0 3px rgba(88, 166, 255, 0.3);
+}
+
+/* Repository Cards */
+.repo-list {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.repo-card {
+  padding: 15px;
+  background-color: #161a23;
+  border: 1px solid #30363d;
+  border-radius: 6px;
+  transition: border-color 0.2s ease-in-out;
+}
+
+.repo-card:hover {
+  border-color: #8b949e;
+}
+
+.main-repo-card {
+  padding: 20px;
+}
+
+.repo-name {
+  margin: 0 0 8px 0;
+  color: #58a6ff;
+  font-size: 18px;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.repo-name:hover {
+  text-decoration: underline;
+}
+
+.repo-description {
+  margin: 0;
+  color: #8b949e;
+  font-size: 14px;
+  line-height: 1.4;
+}
+
+/* Events List */
+.events-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.event-item {
+  padding: 12px 0;
+  border-bottom: 1px solid #30363d;
+}
+
+.event-item:last-child {
+  border-bottom: none;
+}
+
+.event-item p {
+  margin: 0;
+  font-size: 14px;
+  color: #c9d1d9;
+}
+
+/* Responsive adjustments */
+@media screen and (max-width: 900px) {
+  .dashboard-container {
+    flex-direction: column;
+  }
+  
+  .sidebar-left,
+  .sidebar-right {
+    width: 100%;
+  }
+}

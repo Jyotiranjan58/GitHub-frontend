@@ -1,0 +1,18 @@
+* {
+  box-sizing: border-box;
+}
+
+html,
+body,
+#root {
+  margin: 0;
+  padding: 0;
+  min-width: 320px;
+  min-height: 100vh;
+}
+
+body {
+  background-color: #0d1117;
+  color: #f0f6fc;
+  font-family: Arial, sans-serif;
+}

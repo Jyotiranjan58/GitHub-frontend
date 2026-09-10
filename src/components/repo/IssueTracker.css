@@ -1,0 +1,122 @@
+.issue-tracker-container {
+  margin-top: 32px;
+  border-top: 1px solid #30363d;
+  padding-top: 24px;
+}
+
+.issue-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 16px;
+}
+
+.issue-header h3 {
+  font-size: 18px;
+  color: #c9d1d9;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.issue-count {
+  background-color: #30363d;
+  border-radius: 2em;
+  padding: 2px 8px;
+  font-size: 12px;
+}
+
+.new-issue-btn {
+  background-color: #238636;
+  color: #ffffff;
+  border: 1px solid rgba(240, 246, 252, 0.1);
+  padding: 4px 12px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 500;
+}
+
+.new-issue-btn:hover {
+  background-color: #2ea043;
+}
+
+.issue-form {
+  background-color: #161b22;
+  border: 1px solid #30363d;
+  border-radius: 6px;
+  padding: 16px;
+  margin-bottom: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.issue-input, .issue-textarea {
+  background-color: #0d1117;
+  border: 1px solid #30363d;
+  border-radius: 6px;
+  color: #c9d1d9;
+  padding: 8px 12px;
+  font-size: 14px;
+}
+
+.issue-input:focus, .issue-textarea:focus {
+  outline: none;
+  border-color: #58a6ff;
+}
+
+.issue-textarea {
+  min-height: 100px;
+  resize: vertical;
+}
+
+.submit-issue-btn {
+  background-color: #238636;
+  color: white;
+  border: none;
+  padding: 6px 16px;
+  border-radius: 6px;
+  align-self: flex-end;
+  cursor: pointer;
+}
+
+.issue-list {
+  border: 1px solid #30363d;
+  border-radius: 6px;
+  background-color: #0d1117;
+}
+
+.empty-issues {
+  padding: 32px;
+  text-align: center;
+  color: #8b949e;
+}
+
+.issue-card {
+  display: flex;
+  gap: 12px;
+  padding: 12px 16px;
+  border-bottom: 1px solid #30363d;
+}
+
+.issue-card:last-child {
+  border-bottom: none;
+}
+
+.issue-status {
+  font-size: 14px;
+  padding-top: 2px;
+}
+
+.issue-title {
+  margin: 0 0 4px 0;
+  color: #c9d1d9;
+  font-size: 16px;
+}
+
+.issue-desc {
+  margin: 0;
+  color: #8b949e;
+  font-size: 14px;
+}
