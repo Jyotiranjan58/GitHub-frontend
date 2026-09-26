@@ -11,22 +11,23 @@ const Dashboard = () => {
 
   useEffect(() => {
     const userId = localStorage.getItem("userId");
+    const token = localStorage.getItem("token");
+
+    // If there's no logged-in user yet, stop execution here
+    if (!userId || userId === "undefined") return;
 
     const fetchRepositories = async () => {
-      const token = localStorage.getItem("token"); // Retrieve the token
-
       try {
         const response = await fetch(
           `http://localhost:3002/repo/user/${userId}`,
           {
             headers: {
-              Authorization: `Bearer ${token}`, // Attach token
+              Authorization: `Bearer ${token}`,
             },
           },
         );
-
         const data = await response.json();
-        setRepositories(data.repositories);
+        setRepositories(data.repositories || []);
       } catch (err) {
         console.error("Error while fetching repositories : ", err);
       }
