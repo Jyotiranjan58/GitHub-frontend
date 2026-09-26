@@ -1,4 +1,3 @@
-/* Container Layout */
 .dashboard-container {
   display: flex;
   max-width: 1200px;
@@ -8,7 +7,6 @@
   color: #f0f6fc;
 }
 
-/* Sidebars */
 .sidebar-left,
 .sidebar-right {
   width: 25%;
@@ -17,14 +15,12 @@
   gap: 15px;
 }
 
-/* Main Content Area */
 .dashboard-main {
   flex: 1;
   display: flex;
   flex-direction: column;
 }
 
-/* Typography */
 h2 {
   font-size: 20px;
   margin-bottom: 15px;
@@ -38,7 +34,6 @@ h3 {
   color: #8b949e;
 }
 
-/* Search Bar */
 .search-container {
   margin-bottom: 20px;
 }
@@ -51,7 +46,7 @@ h3 {
   border-radius: 6px;
   color: #f0f6fc;
   font-size: 14px;
-  transition: border-color 0.2s ease-in-out;
+  transition: border-color 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
 }
 
 .search-input:focus {
@@ -60,7 +55,6 @@ h3 {
   box-shadow: 0 0 0 3px rgba(88, 166, 255, 0.3);
 }
 
-/* Repository Cards */
 .repo-list {
   display: flex;
   flex-direction: column;
@@ -72,11 +66,13 @@ h3 {
   background-color: #161a23;
   border: 1px solid #30363d;
   border-radius: 6px;
-  transition: border-color 0.2s ease-in-out;
+  transition: all 0.2s cubic-bezier(0.3, 0, 0.5, 1);
 }
 
 .repo-card:hover {
   border-color: #8b949e;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(1, 4, 9, 0.5);
 }
 
 .main-repo-card {
@@ -102,7 +98,6 @@ h3 {
   line-height: 1.4;
 }
 
-/* Events List */
 .events-list {
   list-style: none;
   padding: 0;
@@ -124,12 +119,10 @@ h3 {
   color: #c9d1d9;
 }
 
-/* Responsive adjustments */
 @media screen and (max-width: 900px) {
   .dashboard-container {
     flex-direction: column;
   }
-  
   .sidebar-left,
   .sidebar-right {
     width: 100%;
